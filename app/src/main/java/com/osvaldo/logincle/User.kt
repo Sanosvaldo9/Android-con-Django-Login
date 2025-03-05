@@ -1,10 +1,12 @@
 package com.osvaldo.logincle
 
-data class User(
-    val id: Int,
-    val username: String,
-    val email: String,
-    val first_name: String,
-    val last_name: String,
-    val is_staff: Boolean
+
+data class IniciarSesionRequest(
+    val no_control: String,
+    val password: String
+)
+
+data class IniciarSesionResponse(
+    val message: String,
+    val token: String
 )
